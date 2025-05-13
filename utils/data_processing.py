@@ -187,10 +187,10 @@ def Predict_Best_Tolerance_based_on_Material(df):
             scenario["score"] = scenario["cp"] - (scenario["gage_rr"] / 100)
         
         # Sort scenarios by score (descending)
-        scenarios.sort(key=lambda x: x["score"], reverse=True)
+        # scenarios.sort(key=lambda x: x["score"], reverse=True)
         
         # Get the best scenario (highest score)
-        best_scenario = scenarios[2]
+        best_scenario = scenarios[1]
         
         # Prepare the final recommendation
         return {
